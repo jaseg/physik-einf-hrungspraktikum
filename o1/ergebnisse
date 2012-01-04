@@ -1,4 +1,12 @@
 A1
+
+Fehler:
+  Ablesefehler
+  Ungenauigkeit der Instrumente (+/- 0.5cm)
+  Ungenauigkeit beim Einstellen des Bildes (wie angegeben)
+  Mondphase
+  Das Maßband lügt. (+ 8m)
+
 Linse 4/1
   g=19.9cm
   b=39.4cm
@@ -58,4 +66,48 @@ Linse 4/4
 
   g=55.0cm
   b=101.0cm +/- 0.25cm
+
+A2
+Linse 4/4
+Schirmposition l=120.0cm
+  x2=84.5cm +/- 0.25cm
+  x1=35.0cm +/- 0.25cm
+
+  x2=84.5cm +/- 0.25cm
+  x1=34.5cm +/- 0.25cm
+
+  x2=84.0cm +/- 0.25cm
+  x1=35.0cm +/- 0.25cm  
+
+  x2=84.5cm +/- 0.25cm
+  x1=35.0cm +/- 0.25cm
+
+  x2=84.0cm +/- 0.25cm
+  x1=35.0cm +/- 0.25cm
+
+Linse 4/1
+Schirmposition l=50.0cm
+  x2=35.7cm
+  x1=12.5cm
+
+  x2=35.6cm
+  x1=12.5cm
+  
+  x2=35.8cm
+  x1=12.6cm
+
+  x2=35.7cm
+  x1=12.7cm
+
+  x2=35.7cm
+  x1=12.5cm
+
+Linse 4/2
+Schimposition l=70.0cm
+  x2=43.8cm
+  x1=25.3cm
+
+  x2=
+
+Linse 4/3: Streulinse (kein Bild. s.o.)
 
