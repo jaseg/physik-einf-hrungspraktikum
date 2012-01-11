@@ -59,83 +59,92 @@ f=\frac{1}{\frac{1}{g}+\frac{1}{b'-g}}
 $avg$ bezeichnet das arithmetische Mittel der berechneten Brennweiten.
 \begin{verbatim}
 Linse 4/1
+Messfehler: +/- 0.05cm
 g=19.9 b=39.4 f=9.849
 g=22.5 b=40.1 f=9.875
 g=25.0 b=41.2 f=9.830
 g=27.5 b=43.3 f=10.035
 g=30.0 b=44.8 f=9.911
 g=32.5 b=47.0 f=10.027
-avg=9.921
+avg=9.921 +/- 0.05cm
 Linse 4/2
+Messfehler: +/- 0.25cm
 g=19.9 b=98.0 f=15.859
 g=25.0 b=70.0 f=16.071
 g=30.0 b=65.0 f=16.154
 g=35.0 b=65.5 f=16.298
 g=35.0 b=65.5 f=16.298
 g=40.0 b=67.5 f=16.296
-avg=16.163
+avg=16.163 +/- 0.25cm
 Linse 4/3 ist eine Streulinse
 Linse 4/4
+Messfehler: +/- 0.05cm
 g=40.0 b=105.5 f=24.834
 g=42.5 b=102.0 f=24.792
 g=45.0 b=100.5 f=24.851
 g=47.5 b=100.0 f=24.938
 g=50.0 b=100.0 f=25.000
 g=55.0 b=101.0 f=25.050
-avg=24.911
+avg=24.911 +/- 0.25cm
 \end{verbatim}
+
 \subsection{Brennweitenbestimmung nach Bessel}
 \subsubsection{Sammellinsen}
 \begin{equation}
 f=\frac{l^2-e^2}{4l}
 \end{equation}
 \begin{verbatim}
+Die Messfehlerangaben bezeichnen fortan den Messfehler der Werte x1 und x2, nicht des Wertes e=x2-x1.
 Linse 4/4
+Messfehler: +/- 0.25cm
 l=120.0 e=49.5 f=24.895
 l=120.0 e=50.0 f=24.792
 l=120.0 e=49.0 f=24.998
 l=120.0 e=49.5 f=24.895
 l=120.0 e=49.0 f=24.998
-avg=24.916
+avg=24.916 +/- 0.5cm
 Linse 4/1
+Messfehler: +/- 0.05cm
 l=50.0 e=23.2 f=9.809
 l=50.0 e=23.1 f=9.832
 l=50.0 e=23.2 f=9.809
 l=50.0 e=23.0 f=9.855
 l=50.0 e=23.2 f=9.809
-avg=9.823
+avg=9.823 +/- 0.1cm
 Linse 4/2
+Messfehler: +/- 0.05cm
 l=70.0 e=18.5 f=16.278
 l=70.0 e=18.7 f=16.251
 l=70.0 e=18.8 f=16.238
 l=70.0 e=18.3 f=16.304
 l=70.0 e=18.6 f=16.264
-avg=16.267
+avg=16.267 +/- 0.1cm
 Linse 4/3: Streulinse (kein Bild. s.o.)
 \end{verbatim}
 \subsubsection{Linsenkombinationen}
 \begin{verbatim}
 System 4/1-4/2
+Messfehler: +/- 0.05cm
 l=35.0 e=18.3 f=6.358
 l=35.0 e=18.0 f=6.436
 l=35.0 e=18.0 f=6.436
 l=35.0 e=18.0 f=6.436
 l=35.0 e=18.0 f=6.436
-avg=6.420
+avg=6.420 +/- 0.1cm
 System 4/1-4/3
 l=55.0 e=17.6 f=12.342
 l=55.0 e=17.7 f=12.326
 l=55.0 e=17.7 f=12.326
 l=55.0 e=17.7 f=12.326
 l=55.0 e=17.8 f=12.310
-avg=12.326
+avg=12.326 +/- 0.1cm
 System 4/1-4/4
 l=30.0 e=5.7 f=7.229
 l=30.0 e=5.7 f=7.229
 l=30.0 e=5.8 f=7.220
 l=30.0 e=5.8 f=7.220
 l=30.0 e=5.8 f=7.220
-avg=7.223
+avg=7.223 +/- 0.1cm
 \end{verbatim}
 \subsection{Aufgabe 4}
 \begin{align}
@@ -317,7 +326,7 @@ Schirmposition l=55.0cm
 
 System 4/1-4/4
 Schirmposition l=30.0cm
-    x2=17.4cm
+  x2=17.4cm
   x1=11.7cm
 
   x2=17.5cm
