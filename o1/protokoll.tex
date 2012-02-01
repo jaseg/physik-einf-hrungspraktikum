@@ -48,9 +48,6 @@ Partner: Erik Lehmann, 546031}
 \date{11-01-04}
 \begin{document}
 \maketitle
-\begin{equation}
-\forall x\in\left]x_0-R,x_0+R\right[:
-\end{equation}
 \section{Auswertung}
 \subsection{Brennweitenbestimmung mittels Abbildungsgleichung}
 \begin{equation}
@@ -70,7 +67,8 @@ g=25.0 b=41.2 f=9.830
 g=27.5 b=43.3 f=10.035
 g=30.0 b=44.8 f=9.911
 g=32.5 b=47.0 f=10.027
-avg=9.921 +/- 0.05cm
+Durchschnitt f=9.921cm
+Messunsicherheit (fortgepflanzt) u=0.022cm
 Linse 4/2
 Messfehler: +/- 0.25cm
 g=19.9 b=98.0 f=15.859
@@ -79,17 +77,19 @@ g=30.0 b=65.0 f=16.154
 g=35.0 b=65.5 f=16.298
 g=35.0 b=65.5 f=16.298
 g=40.0 b=67.5 f=16.296
-avg=16.163 +/- 0.25cm
+Durchschnitt f=16.163cm
+Messunsicherheit (fortgepflanzt) u=0.088cm
 Linse 4/3 ist eine Streulinse
 Linse 4/4
-Messfehler: +/- 0.05cm
+Messfehler: +/- 0.25cm
 g=40.0 b=105.5 f=24.834
 g=42.5 b=102.0 f=24.792
 g=45.0 b=100.5 f=24.851
 g=47.5 b=100.0 f=24.938
 g=50.0 b=100.0 f=25.000
 g=55.0 b=101.0 f=25.050
-avg=24.911 +/- 0.25cm
+Durchschnitt f==24.911cm
+Messunsicherheit (fortgepflanzt) u=0.064cm
 \end{verbatim}
 
 \subsection{Brennweitenbestimmung nach Bessel}
@@ -106,7 +106,8 @@ l=120.0 e=50.0 f=24.792
 l=120.0 e=49.0 f=24.998
 l=120.0 e=49.5 f=24.895
 l=120.0 e=49.0 f=24.998
-avg=24.916 +/- 0.5cm
+Durchschnitt f=24.916cm
+Messunsicherheit (fortgepflanzt) u=0.214cm
 Linse 4/1
 Messfehler: +/- 0.05cm
 l=50.0 e=23.2 f=9.809
@@ -114,7 +115,8 @@ l=50.0 e=23.1 f=9.832
 l=50.0 e=23.2 f=9.809
 l=50.0 e=23.0 f=9.855
 l=50.0 e=23.2 f=9.809
-avg=9.823 +/- 0.1cm
+Durchschnitt f=9.823cm
+Messunsicherheit (fortgepflanzt) u=0.023cm
 Linse 4/2
 Messfehler: +/- 0.05cm
 l=70.0 e=18.5 f=16.278
@@ -122,7 +124,8 @@ l=70.0 e=18.7 f=16.251
 l=70.0 e=18.8 f=16.238
 l=70.0 e=18.3 f=16.304
 l=70.0 e=18.6 f=16.264
-avg=16.267 +/- 0.1cm
+Durchschnitt f=16.267
+Messunsicherheit (fortgepflanzt) u=0.024cm
 Linse 4/3: Streulinse (kein Bild. s.o.)
 \end{verbatim}
 \subsubsection{Linsenkombinationen}
@@ -134,39 +137,114 @@ l=35.0 e=18.0 f=6.436
 l=35.0 e=18.0 f=6.436
 l=35.0 e=18.0 f=6.436
 l=35.0 e=18.0 f=6.436
-avg=6.420 +/- 0.1cm
+Durchschnitt f=6.420cm
+Messunsicherheit (fortgepflanzt) u=0.022cm
 System 4/1-4/3
+Messfehler: +/- 0.05cm
 l=55.0 e=17.6 f=12.342
 l=55.0 e=17.7 f=12.326
 l=55.0 e=17.7 f=12.326
 l=55.0 e=17.7 f=12.326
 l=55.0 e=17.8 f=12.310
-avg=12.326 +/- 0.1cm
+Durchschnitt f=12.326cm
+Messunsicherheit (fortgepflanzt) u=0.024cm
 System 4/1-4/4
+Messfehler: +/- 0.05cm
 l=30.0 e=5.7 f=7.229
 l=30.0 e=5.7 f=7.229
 l=30.0 e=5.8 f=7.220
 l=30.0 e=5.8 f=7.220
 l=30.0 e=5.8 f=7.220
-avg=7.223 +/- 0.1cm
+Durchschnitt f=7.223cm
+Messunsicherheit (fortgepflanzt) u=0.025cm
 \end{verbatim}
 \subsection{Aufgabe 4}
 \begin{align}
 f&=\frac{1}{\frac{1}{f_1}+\frac{1}{f_2}}\\
 f_1&=\frac{1}{\frac{1}{f}-\frac{1}{f_2}}
 \end{align}
+%sqrt((1/(f^2*(1/f-1/9.921)^2)*0.025)^2+((1/((1/f-1/9.921)^2*9.921^2))*0.025)^2)
 \begin{verbatim}
 System 4/1-4/2
-f=6.1475664430
+f=6.1475664430 cm
+u_f=0.2176462696 cm
 System 4/1-4/4
-f=7.0952581323
+f=7.0952581323 cm
+u_f=0.7824410720 cm
 Linse 4/3:
-f=-50.8466720891
+f=-50.8466720891 cm
+u_f=0.3825914648 cm
 \end{verbatim}
 Die berechneten Brennweiten der Linsensysteme liegen beide innerhalb eines $3mm$-Radius um die nach der Bessel-Methode gemessenen. Das liegt durchaus innerhalb der noch zu diskutierenden Toleranz.
 \subsection{Aufgabe 5}
 Die Bessel-Methode ist die genauere der beiden Messmethoden, da sich bei ihr eine Ungenauigkeit  der Positionierung der Mittelebene der Linse bezogen auf einen Fixpunkt auf der Halterung der Linse, der zur Messung der Abstände als Referenz herangezogen (Ursprung eines Systematischen Fehlers) wird durch Subtraktion der beiden Messwerte aufgehoben wird.
 \section{Fehlerbetrachtung}
+\subsection{Nebenrechnung zur Abbildungsgleichung}
+\begin{verbatim}
+(%i1) eq:1/(1/g+1/(b-g));
+                                       1
+(%o1)                              ---------
+                                   1     1
+                                   - + -----
+                                   g   b - g
+(%i2) diff(eq, g);
+                                     1       1
+                                  -------- - --
+                                         2    2
+                                  (b - g)    g
+(%o2)                           - -------------
+                                   1     1   2
+                                  (- + -----)
+                                   g   b - g
+(%i3) diff(eq, b);
+                                       1
+(%o3)                        ---------------------
+                              1     1   2        2
+                             (- + -----)  (b - g)
+                              g   b - g
+(%i4) 
+\end{verbatim}
+\subsection{Nebenrechnung zur Bessel-Gleichung}
+\begin{verbatim}
+(%i1) eq:(l^2-e^2)/(4*l);
+                                     2    2
+                                    l  - e
+(%o1)                               -------
+                                      4 l
+(%i2) diff(eq,l);
+                                       2    2
+                                  1   l  - e
+(%o2)                             - - -------
+                                  2       2
+                                       4 l
+(%i3) diff(eq,e);
+                                        e
+(%o3)                                - ---
+                                       2 l
+(%i4)
+\end{verbatim}
+\subsection{Nebenrechnung zu den Linsensystemen}
+\begin{verbatim}
+(%i1) eq: f1=1/(1/f-1/f2);
+                                         1
+(%o1)                             f1 = ------
+                                       1   1
+                                       - - --
+                                       f   f2
+(%i2) diff(eq, f);
+                                        1
+(%o2)                          0 = ------------
+                                    2  1   1  2
+                                   f  (- - --)
+                                       f   f2
+(%i3) diff(eq, f2);
+                                          1
+(%o3)                         0 = - -------------
+                                     1   1  2   2
+                                    (- - --)  f2
+                                     f   f2
+(%i4)
+\end{verbatim}
 \section{Messdaten}
 \url{https://github.com/jaseg/physik-einf-hrungspraktikum/blob/master/o1/ergebnisse}
 \begin{verbatim}
