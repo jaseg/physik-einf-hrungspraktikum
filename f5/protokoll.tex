@@ -46,15 +46,27 @@
 \author{Sebastian Götte, 546408\\
 Partner: Erik Lehmann, 546031\\
 \emph{und eine weitere Person}}
-\date{11-01-04}
+\date{12-01-18}
 \begin{document}
 \maketitle
+\section{Aufgabenstellung und Vorbetrachtungen}
+Hierzu sei auf die in Anhang (A.1) befindliche Aufgabenstellung verwiesen, die diesbezüglich sehr ausführlich ist.
+\section{Durchführung}
+Der Versuchsaufbau ist vorgegeben und besteht aus einer Analysewaage, Metallproben, einem Pyknometer incl. Pinzette und einer Flasche destillierten Wassers.
 \section{Auswertung}
-Die Messdaten befinden sich in der Tabelle. Die zur Ermittlung derselben verwendeten Formeln sind ebenfalls dort zu finden. Die Berechnung der Ableitungen der Dichtefunktion nach Gl. 5 erfolgte mit Maxima und ist in der Datei \texttt{maxima-screencap} zu finden.
+Die Messdaten befinden sich in der Tabelle (Anhang A.2). Sie wurden dorthin direkt aus dem elektronischen Messdatenprotokoll übernommen. Die gemäß Aufgabenstellung zu ermittelnden Werte befinden sich in derselben Tabell in den dunkel hinterlegten Zellen.
 
-Der Vergleich der ermittelten Werte mit Dichtewerten aus der deutschsprachigen Wikipedia ergibt, dass der Wert für Aluminium mit 2.7 exakt mit dem Referenzwert übereinstimmt. Die ermittelte Dichte des Kupfers liegt um einen Betrag jenseits der Messunsicherheit ($0.1\cdot 10^3\frac{kg}{m^3}$ bei $u=0.03\frac{kg}{m^3}$) über dem Referenzwert. Das kann man z.T. durch unterschiedliche Messbedingungen erklären (v.A. die Temperatur des Kupfers), zum Teil durch offenbar fälschlicherweise vernachlässigte oder falsch eingeschätzte Messfehler und ein zu kleines Probenset.
-\section{Messdaten}
-\subsection{Ermittlung der Ableitungen der Dichtefunktion}
+Die Fehlerfortpflanzung gemäß Aufg.\ 6 erfolgt durch das Gauß'sche Fehlerfortpflanzungsgesetz. Die Berechnung der hierzu erforderlichen Ableitungen der Dichtefunktion nach Gl.\ 5 (siehe Aufgabenstellung mit phys. Grundlagen) erfolgte mit maxima. Eine Kopie des Logs ist in Anhang (A.2) (Datei \url{maxima-screencap}).
+Ich verzichte hier auf die Niederschrift der aus den in Anhang (A.2) berechneten Ableitungen generierten Funktion der gesamten Messunsicherheit in Abhängigkeit der einzelnen Messunsicherheiten. Diese wurde direkt in der schwerlich menschenlesbaren Notation von LibreOffice Calc (Tabellenkalkulationsprogramm) geschrieben und entspricht der folgenden Formel:
+\begin{equation}
+{u_y}=\sqrt {\left (\frac{\partial y}{\partial x_1} \cdot u_1 \right)^2 +\left (\frac{\partial y}{\partial x_2} \cdot u_2 \right)^2 +\cdots }
+\end{equation}
+(aus Wikipedia (de): \url{http://de.wikipedia.org/wiki/Fehlerfortpflanzung#Voneinander_unabh.C3.A4ngige_fehlerbehaftete_Gr.C3.B6.C3.9Fen}, Stand: Jan.\ 2012)
+
+\subsection{Zu Aufgabe 6}
+Der Vergleich der ermittelten Werte mit Dichtewerten aus der deutschsprachigen Wikipedia ergibt, dass der Wert für Aluminium mit 2.7 exakt mit dem Referenzwert übereinstimmt. Die ermittelte Dichte des Kupfers liegt um einen Betrag jenseits der Messunsicherheit ($0.1\cdot 10^3\frac{kg}{m^3}$ bei $u=0.03\frac{kg}{m^3}$) über dem Referenzwert. Das kann man z.T. durch unterschiedliche Messbedingungen erklären (v.A. die Temperatur des Kupfers), zum Teil durch offenbar fälschlicherweise vernachlässigte oder falsch eingeschätzte Messfehler und ein zu kleines Probenset. Primärer Faktor dürfte die kleine Samplemenge sein, da sich hier die großen Variationen, die beim Umgang mit Wasser und Analysewaagen entstehen, noch stark im Mittelwert niederschlagen können.
+
+\section*{Anhang (A.2): maxima-Log}
 \begin{verbatim}
 (%i1) eq:(m1*pw-(m3-m2)*pl)/(m1-(m3-m2));
                              m1 pw - (m3 - m2) pl
