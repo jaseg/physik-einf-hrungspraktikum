@@ -1,1 +1,1 @@
-pdftk T=daten.pdf A=../Einfuehrungspraktikum.pdf cat A15-17 T output output.pdf
+pdftk T=titelseite.pdf D=daten.pdf A=../Einfuehrungspraktikum.pdf cat T D A15-17 output output.pdf
