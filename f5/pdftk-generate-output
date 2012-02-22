@@ -1,1 +1,1 @@
-pdftk T=calc.pdf P=protokoll.pdf A=../Einfuehrungspraktikum.pdf cat P A21-23 T output output.pdf
+pdftk T=calc.pdf P=protokoll.pdf cat P T output output.pdf

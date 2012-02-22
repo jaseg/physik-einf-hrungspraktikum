@@ -11,6 +11,7 @@
 \usepackage{amssymb,amsmath}
 \usepackage{wasysym}
 \usepackage{amsthm}
+\usepackage{gensymb}
 %\usepackage{marvosym}
 \usepackage{tabularx}
 \usepackage{multicol}
@@ -41,59 +42,170 @@
 \onehalfspacing
 \setlength{\parskip}{8pt plus4pt minus4pt}
 \title{Versuchsprotokoll F5 Dichte fester Körper\\
-\small\emph{This document to be found in teh internetz!}\\
+\small\emph{This document to be found in the internet}\\
 \url{https://github.com/jaseg/physik-einf-hrungspraktikum}}
 \author{Sebastian Götte, 546408\\
-Partner: Erik Lehmann, 546031\\
-\emph{und eine weitere Person}}
+Partner: Erik Lehmann, 546031 und Markus Hube}
 \date{12-01-18}
 \begin{document}
 \maketitle
 \section{Aufgabenstellung und Vorbetrachtungen}
-Hierzu sei auf die in Anhang (A.2) befindliche Aufgabenstellung verwiesen, die diesbezüglich sehr ausführlich ist.
-
-TL;DR: Bestimme die Dichte metallischer Probekörper mit einem Pyknometer und einer Waage! Ermittle die Messunsicherheiten!
+Bestimme die Dichte metallischer Probekörper mit einem Pyknometer und einer Waage. Ermittle die Messunsicherheiten.
 \section{Durchführung}
 Der Versuchsaufbau ist vorgegeben und besteht aus einer Analysewaage, Metallproben, einem Pyknometer incl. Pinzette und einer Flasche destillierten Wassers.
 \section{Auswertung}
-Die Messdaten befinden sich in der Tabelle (Anhang A.3). Sie wurden dorthin direkt aus dem elektronischen Messdatenprotokoll (das bei richtiger Handhabung als unfälschbar bezeichnet werden kann) übernommen. Die gemäß Aufgabenstellung zu ermittelnden Werte befinden sich in derselben Tabelle in den dunkel hinterlegten Zellen.
+Das elektronische Messdatenprotokoll findet sich in Anhang \ref{messdatenprotokoll}.
 
+\section{Aufgaben 1,2,3}
+Der Mittelwert von $n$ Messwerten wird nach $\overline n=\frac{1}{n}\cdot\sum_{i=1}^nx_i$ berechnet.
+\subsection{Ergebnis Aufgabe 1}
+\subsubsection{Kupfer}
+\begin{equation}
+\overline m=8.9939\mathrm{g}
+\end{equation}
+\subsubsection{Alu}
+\begin{equation}
+\overline m=2.7506\mathrm{g}
+\end{equation}
+\subsection{Ergebnis Aufgabe 2}
+\begin{equation}
+\overline m=51.5760\mathrm{g}
+\end{equation}
+\subsection{Ergebnis Aufgabe 3}
+\subsubsection{Kupfer}
+\begin{equation}
+\overline m=53.3146\mathrm{g}
+\end{equation}
+\subsubsection{Alu}
+\begin{equation}
+\overline m=59.5562\mathrm{g}
+\end{equation}
+
+\section{Aufgabe 4}
 Formel zur Dichtebestimmung:
 \begin{equation}
+\label{dichteformel}
 \rho = \frac{m_\text{Probe in Luft}\cdot\rho_\text{Wasser}-\left(m_\text{Pyknometer mit Probe}-m_\text{Pyknometer ohne Probe}\right)\cdot\rho_\text{Luft}}{m_\text{Probe in Luft}-\left(m_\text{Pyknometer mit Probe}-m_\text{Pyknometer ohne Probe}\right)}
 \end{equation}
 Das Pyknometer ist hier jeweils Wassergefüllt und der Auftrieb der Proben ist in den Messwerten enthalten.
-
-Die Fehlerfortpflanzung gemäß Aufg.\ 6 erfolgt durch das Gauß'sche Fehlerfortpflanzungsgesetz. Die Berechnung der hierzu erforderlichen Ableitungen der Dichtefunktion nach Gl.\ 5 (siehe Aufgabenstellung mit phys. Grundlagen) erfolgte mit maxima. Eine Kopie des Logs ist in Anhang (A.1) (Datei \url{file://maxima-screencap}).
-Ich verzichte hier auf die Niederschrift der aus den in Anhang (A.1) berechneten Ableitungen generierten Funktion der gesamten Messunsicherheit in Abhängigkeit der einzelnen Messunsicherheiten. Diese wurde direkt in der außerhalb des Kontextes des Tabellenkalkulationsprogrammes schwerlich menschenlesbaren Notation von LibreOffice Calc geschrieben und entspricht der folgenden Formel:
+\subsection{Ergebnis für Kupfer}
 \begin{equation}
+\rho=8843.1756\frac{\mathrm{kg}}{\mathrm{m}^3}
+\end{equation}
+\subsection{Ergebnis für Alu}
+\begin{equation}
+\rho=2709.7934\frac{\mathrm{kg}}{\mathrm{m}^3}
+\end{equation}
+
+\section{Aufgabe 6}
+\subsection{Fehlerfortpflanzung}
+Die Fehlerfortpflanzung erfolgt durch das Gauß'sche Fehlerfortpflanzungsgesetz nach der folgenden Formel:
+\begin{equation}
+\label{gaussianerrordings}
 {u_y}=\sqrt {\left (\frac{\partial y}{\partial x_1} \cdot u_1 \right)^2 +\left (\frac{\partial y}{\partial x_2} \cdot u_2 \right)^2 +\cdots }
 \end{equation}
 (aus Wikipedia (de): \url{http://de.wikipedia.org/wiki/Fehlerfortpflanzung#Voneinander_unabh.C3.A4ngige_fehlerbehaftete_Gr.C3.B6.C3.9Fen}, Stand: Jan.\ 2012)
 
-\subsection{Zu Aufgabe 6}
-Der Vergleich der ermittelten Werte mit Dichtewerten aus der deutschsprachigen Wikipedia ergibt, dass der Wert für Aluminium mit 2.7 exakt mit dem Referenzwert übereinstimmt. Die ermittelte Dichte des Kupfers liegt um einen Betrag jenseits der Messunsicherheit ($0.1\cdot 10^3\frac{kg}{m^3}$ bei $u=0.03\frac{kg}{m^3}$) über dem Referenzwert. Das kann man z.T. durch unterschiedliche Messbedingungen erklären (v.A. die Temperatur des Kupfers), zum Teil durch offenbar fälschlicherweise vernachlässigte oder falsch eingeschätzte Messfehler und ein zu kleines Probenset. Primärer Faktor dürfte die kleine Samplemenge sein, da sich hier die großen Variationen, die beim Umgang mit Wasser und Analysewaagen entstehen, noch stark im Mittelwert niederschlagen können.
-
-\section*{Anhang (A.1): maxima-Log}
+Die hier einzusetzenden Ableitungen habe ich mit Maxima berechnet. Gleichung \ref{dichteformel} sieht in Maxima-Notation folgendermaßen aus:
 \begin{verbatim}
 (%i1) eq:(m1*pw-(m3-m2)*pl)/(m1-(m3-m2));
                              m1 pw - (m3 - m2) pl
 (%o1)                        --------------------
                                 - m3 + m2 + m1
+\end{verbatim}
+Die Ableitung $\rho_{m_1}$ von $\rho$ (aus Gl.\ \ref{dichteformel}) sieht in dieser Notation wie folgt aus:
+\begin{verbatim}
 (%i2) diff(eq, m1);
                            pw         m1 pw - (m3 - m2) pl
 (%o2)                -------------- - --------------------
                      - m3 + m2 + m1                    2
                                        (- m3 + m2 + m1)
+\end{verbatim}
+Ableitung $\rho_{m_2}$: 
+\begin{verbatim}
 (%i3) diff(eq, m2);
                            pl         m1 pw - (m3 - m2) pl
 (%o3)                -------------- - --------------------
                      - m3 + m2 + m1                    2
                                        (- m3 + m2 + m1)
+\end{verbatim}
+Ableitung $\rho_{m_3}$:
+\begin{verbatim}
 (%i4) diff(eq, m3);
                      m1 pw - (m3 - m2) pl         pl
 (%o4)                -------------------- - --------------
                                       2     - m3 + m2 + m1
                       (- m3 + m2 + m1)
+\end{verbatim}
+Die Messunsicherheit wurde anhand der Standardabweichung der Messwerte ermittelt, da sie bei den Wasser involvierenden Messungen wesentlich gröber als die Messgenauigkeit der Waage ist. Die Standardabweichungen wurden mit der LibreOffice-Funktion \texttt{STDEVP} ermittelt. Die daraus berechneten Messunsicherheiten sind:
+\begin{description}
+\item[Kupferprobe]$u=6.83\cdot10^{-5}\mathrm{g}$
+\item[Aluprobe]$u=2.04\cdot10^{-5}\mathrm{g}$
+\item[Volles Pyknometer]$u=2.97\cdot10^{-3}\mathrm{g}$
+\item[Volles Pyknometer mit Kupferprobe]$u=5.52\cdot10^{-3}\mathrm{g}$
+\item[Volles Pyknometer mti Aluprobe]$u=8.21\cdot10^{-4}\mathrm{g}$
+\end{description}
+Setzt man nun diese Ergebnisse in Formel \ref{gaussianerrordings} ein, erhält man für die Messunsicherheit der ermittelten Dichtewerte:
+\begin{description}
+\item[Kupfer]$u=27\frac{\mathrm{kg}}{\mathrm{m}^3}$
+\item[Alu]$u=17\frac{\mathrm{kg}}{\mathrm{m}^3}$
+\end{description}
+
+\subsection{Vergleich der Ergebnisse mit Referenzwerten}
+Der Vergleich der ermittelten Werte mit Dichtewerten aus der deutschsprachigen Wikipedia ergibt, dass der Wert für Aluminium mit $2.7\cdot10^3\frac{\mathrm{kg}}{\mathrm{m}^3}$ exakt mit dem Referenzwert übereinstimmt. Die ermittelte Dichte des Kupfers liegt mit ca. $80\frac{\mathrm{kg}}{\mathrm{m}^3}$ um einen Betrag jenseits der Messunsicherheit über dem Referenzwert. Das kann man z.T. durch unterschiedliche Messbedingungen erklären (v.A. die Temperatur des Kupfers -- wir maßen bei $22\degree$, der Referenzwert ist für $20\degree$ angegeben), zum Teil durch offenbar fälschlicherweise vernachlässigte oder falsch eingeschätzte Messfehler und ein zu kleines Probenset. Primärer Faktor dürfte die kleine Samplemenge sein, da sich hier die großen Variationen, die beim Umgang mit Wasser und Analysewaagen entstehen, noch stark im Mittelwert niederschlagen können.
+
+\appendix
+\section{Messdatenprotokoll}
+\label{messdatenprotokoll}
+\begin{verbatim}
+Versuchende: Sebastian Götte (546408), Markus Hube <hube@physik.hu-berlin.de>,
+Erik Lehmann 
+
+Temperatur 22.0 +/- 0.5
+Druck 52+48.6 +/- 0.1
+Waage:  Systematisch +/- 0.2mg
+        Zufällig +/- 0.1mg
+Dichte des Wassers lt. Diagramm: 997.77 kg/m^3
+
+Kupfer
+8.9938g
+8.9941g
+8.9938g
+8.9941g
+8.9937g
+8.9938g
+
+Alu
+2.7506
+2.7506
+2.7506
+2.7505
+2.7505
+2.7505
+
+Pyknometer (voll)
+51.5614
+51.5776
+51.5830
+51.5810
+51.5803
+51.5728
+
+Pyknometer (voll) m. Alu
+53.3395
+53.3153
+53.3200
+53.3040
+53.3121
+53.2965
+
+Pyknometer (voll) m. Kupfer
+59.5539
+59.5548
+59.5552
+59.5599
+59.5577
+59.5559
+
 \end{verbatim}
 \end{document}
